@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:this.resources>
+    <xp:script src="/ws.js" clientSide="true"></xp:script>
+  </xp:this.resources>
+  <xp:scriptBlock id="websocketInit">
+    <xp:this.value>
+      <![CDATA[var wsUri = "#{javascript:websocketBean.webSocketUrl}";
+initWs(wsUri);]]>
+    </xp:this.value>
+  </xp:scriptBlock>
+</xp:view>
