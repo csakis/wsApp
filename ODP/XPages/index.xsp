@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
   <xp:this.resources>
     <xp:script src="/ws.js" clientSide="true"></xp:script>
   </xp:this.resources>
@@ -9,4 +9,6 @@
 initWs(wsUri);]]>
     </xp:this.value>
   </xp:scriptBlock>
+  <xp:div styleClass="container" style="margin-top:25px">
+    <xc:ccShape></xc:ccShape></xp:div>
 </xp:view>
