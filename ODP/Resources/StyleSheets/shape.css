@@ -1,6 +1,6 @@
-.luckyDivClass {
+.shape {
 	transition: all 2s ease-in-out;
 	margin:auto;
 	margin-bottom: 20px;
-
+	border: dotted red 2px;
 }

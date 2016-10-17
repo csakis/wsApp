@@ -3,17 +3,21 @@
   <xp:this.resources>
     <xp:styleSheet href="/shape.css"></xp:styleSheet>
   </xp:this.resources>
-   <xp:div styleClass="text-center center-block" style="min-height:100px">
-    <xp:div id="luckyDiv" styleClass="luckyDivClass">   
-    </xp:div>
+  <xp:div styleClass="text-center col-sm-8 col-sm-offset-2" style="border: 1px solid #DDD; padding: 5px;">
+    <xp:div id="shapeDiv" style="min-height:100px" styleClass="shape"></xp:div>
     <xp:button styleClass="btn btn-primary" id="luckyBtn" value="Click me!">
       <xp:eventHandler event="onclick" submit="false">
-        <xp:this.script><![CDATA[var borders = ["solid", "dotted", "dashed", "double", "groove", "ridge", "inset", "outset", "none"];
+        <xp:this.script><![CDATA[function getRandomNumber (min, max) {
+	return Math.floor(Math.random() * (max-min)) + min;
+}
+
+var borders = ["solid", "dotted", "dashed", "double", "groove", "ridge", "inset", "outset", "none"];
 var border = getRandomNumber(1,10) + "px firebrick " + borders[getRandomNumber(0,8)]; 
 var backgroundColor = "rgba(" + getRandomNumber(0,255)+ ","+ getRandomNumber(0,255) + "," + getRandomNumber(0,255)+ "," + getRandomNumber(0,10)/10+")";
 var borderRadius = getRandomNumber(0, 60)+ "% "+ getRandomNumber(0, 60)+ "%"; 
 var divHeight = getRandomNumber(10,300)+"px";
 var divWidth = getRandomNumber(10,700)+"px";
+
 var shape = {};
 shape.border = border;
 shape.bgColor = backgroundColor;
@@ -21,17 +25,9 @@ shape.borderRadius = borderRadius;
 shape.divHeight = divHeight;
 shape.divWidth = divWidth;
 
-var shapeMessage = createShapeMessage(shape);
-console.info("shape message:");
-console.log(JSON.parse(shapeMessage));
-wsConnection.send(shapeMessage);
-]]></xp:this.script>
+var shapeMessage = createShapeMsg(shape);
+ws.send(shapeMessage);]]></xp:this.script>
       </xp:eventHandler>
     </xp:button>
-   </xp:div>
-  <xp:scriptBlock id="scriptBlock1">
-    <xp:this.value><![CDATA[function getRandomNumber (min, max){
-	return Math.floor(Math.random() * (max-min)) + min;
-}]]></xp:this.value>
-  </xp:scriptBlock>
+  </xp:div>
 </xp:view>

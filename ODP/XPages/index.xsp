@@ -6,9 +6,11 @@
   <xp:scriptBlock id="websocketInit">
     <xp:this.value>
       <![CDATA[var wsUri = "#{javascript:websocketBean.webSocketUrl}";
+var currentUser = "#{javascript:@UserName()}";
 initWs(wsUri);]]>
     </xp:this.value>
   </xp:scriptBlock>
   <xp:div styleClass="container" style="margin-top:25px">
-    <xc:ccShape></xc:ccShape></xp:div>
+    <xc:ccShape></xc:ccShape>
+  </xp:div>
 </xp:view>

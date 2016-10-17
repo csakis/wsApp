@@ -7,6 +7,24 @@ if (typeof Object.create !== 'function') {
 	}
 }
 
+function createMsgHeader() {
+	// create the constant part of websocket messages
+	var msg = {};
+	msg.from = currentUser; //a global var of @UserName()
+	msg.to = "/wsApp.nsf/*";
+	msg.data = {};
+	msg.data.application = "wsApp";
+	return msg
+}
+
+function createShapeMsg(shape) {
+	var msg = createMsgHeader();
+	msg.text = ""; // there's no chat msg
+	msg.data.type = "shape";
+	msg.data.shape = shape;
+	return msg;
+}
+
 var ws;
 
 function initWs() {
@@ -41,8 +59,13 @@ var Ws = {
 		
 	},
 /* *** METHODS *** */
-	send : function(json) {
-		websocket.send(json);
+	send : 	function(msg) {
+		if (websocket.readyState === 1) {
+			websocket.send(JSON.stringify(msg));
+		}
+		else {
+			console.log("No websocket connection");
+		}
 	},
 	close:function(){
 		websocket.close();
