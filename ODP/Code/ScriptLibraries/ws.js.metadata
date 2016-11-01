@@ -9,7 +9,4 @@
   <item name="$PublicAccess" sign="true">
     <text>1</text>
   </item>
-  <item name="$Comment">
-    <text>client side websocket JS</text>
-  </item>
 </note>

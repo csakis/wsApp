@@ -30,4 +30,7 @@ ws.send(shapeMessage);]]></xp:this.script>
       </xp:eventHandler>
     </xp:button>
   </xp:div>
+  <xp:scriptBlock id="shapeDivScript">
+    <xp:this.value><![CDATA[var $shapeDiv = x$("#{id:shapeDiv}");]]></xp:this.value>
+  </xp:scriptBlock>
 </xp:view>

@@ -11,7 +11,7 @@ function createMsgHeader() {
 	// create the constant part of websocket messages
 	var msg = {};
 	msg.from = currentUser; //a global var of @UserName()
-	msg.to = "/wsApp.nsf/*";
+	msg.to = "/wsapp.nsf*";
 	msg.data = {};
 	msg.data.application = "wsApp";
 	return msg
@@ -53,7 +53,24 @@ var Ws = {
 		
 	},
 	onMessage : function(e) {
-		
+		var msg = JSON.parse(e.data);
+		// check if the message comes form webRTCApp
+		if (msg.data.application !== "wsApp") {
+			console.log("This is not a wsApp message: "+ msg.data.application);
+			return false;
+		} // if application
+
+		// message type=shape
+		if (msg.data.type === "shape") {
+			var shape = msg.data.shape;
+			$shapeDiv.
+			css("background-color", shape.bgColor).
+			css("border-radius", shape.borderRadius).
+			css("border", shape.border).
+			width(shape.divWidth).
+			height(shape.divHeight);
+
+		} //end shape
 	},
 	onError : function(e) {
 		

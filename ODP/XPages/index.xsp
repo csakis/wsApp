@@ -5,8 +5,8 @@
   </xp:this.resources>
   <xp:scriptBlock id="websocketInit">
     <xp:this.value>
-      <![CDATA[var wsUri = "#{javascript:websocketBean.webSocketUrl}";
-var currentUser = "#{javascript:@UserName()}";
+      <![CDATA[var currentUser = "#{javascript:@UserName()}";
+var wsUri = "#{javascript:websocketBean.webSocketUrl}";
 initWs(wsUri);]]>
     </xp:this.value>
   </xp:scriptBlock>
