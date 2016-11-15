@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$TITLE">
-    <text>ccShape.xsp</text>
-  </item>
-  <item name="$Flags">
-    <text>gC~4;</text>
-  </item>
-  <item name="$FileNames" sign="true">
-    <text>ccShape.xsp</text>
-  </item>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.6" replicaid="8725804C000EFFF1" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="16a" sequence="24" unid="A8AAB70844BDB7FE8725804C000F006E">
+<created><datetime dst="true">20161013T204351,50-06</datetime></created>
+<modified><datetime>20161114T170419,54-07</datetime></modified>
+<revised><datetime>20161114T170419,53-07</datetime></revised>
+<lastaccessed><datetime>20161114T170419,54-07</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20161013T204351,64-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Csaba Kiss/O=desktop</name></updatedby>
+<wassignedby><name>CN=Csaba Kiss/O=desktop</name></wassignedby>
+<item name="$TITLE"><text>ccShape.xsp</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+
+<item name="$DesignerVersion"><text>8.5.1</text></item>
+
+
+
+
+
+
+<item name="$FileNames" sign="true"><text>ccShape.xsp</text></item>
+
 </note>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view name='shapes' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.6'
+ replicaid='8725804C000EFFF1' showinmenu='false' noreplace='true' publicaccess='false'
+ designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='beveled' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
+ shrinkrows='false' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
+ rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white' totalscolor='black'
+ headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false'>
+<noteinfo noteid='18a' unid='C9E819A71ADC26548725806C000029AE' sequence='2'>
+<created><datetime>20161114T170146,70-07</datetime></created>
+<modified><datetime>20161114T172023,23-07</datetime></modified>
+<revised><datetime>20161114T172023,22-07</datetime></revised>
+<lastaccessed><datetime>20161114T172023,23-07</datetime></lastaccessed>
+<addedtofile><datetime>20161114T170146,71-07</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Csaba Kiss/O=desktop</name></updatedby>
+<wassignedby><name>CN=Csaba Kiss/O=desktop</name></wassignedby><code event='selection'><formula
+>SELECT ((Form = "shape"))</formula></code>
+<column sort='descending' hidedetailrows='false' itemname='$1' width='15.2500'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><columnheader title='modified'><font size='9pt' style='bold'/></columnheader><code
+ event='value'><formula>@Modified</formula></code></column>
+<column hidedetailrows='false' itemname='bgColor' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='bgColor'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='border' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='border'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='borderRadius' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='borderRadius'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='height' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='height'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='width' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='width'><font size='9pt' style='bold'/></columnheader></column>
+<item name='$SelQuery' sign='true'>
+<rawitemdata type='f'>
+gQYAAAAAif8RAAAAAAABAAUAc2hhcGUA
+</rawitemdata></item></view>
+

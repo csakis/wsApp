@@ -1,7 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" default="true" class="icon">
-  <item name="IconBitmap" summary="true">
-    <rawitemdata type="6">
+<?xml version='1.0' encoding='utf-8'?>
+<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.6' replicaid='8725804C000EFFF1'>
+<noteinfo noteid='11a' unid='8602375730055E0D8725804C000EFFF5' sequence='16'>
+<created><datetime dst='true'>20161013T204350,29-06</datetime></created>
+<modified><datetime>20161114T164224,00-07</datetime></modified>
+<revised><datetime>20161114T164223,99-07</datetime></revised>
+<lastaccessed><datetime>20161114T164224,00-07</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20161013T204350,32-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Csaba Kiss/O=desktop</name></updatedby>
+<wassignedby><name>CN=Csaba Kiss/O=desktop</name></wassignedby>
+<item name='IconBitmap' summary='true'>
+<rawitemdata type='6'>
 AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA
 D+AAAAfAAAADgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAcAAAAPwAAAP8AAAD/AAAA/wAAAP
 +AAAH/wAAD//8A////gf//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAA
@@ -14,24 +23,11 @@ fdd3d3fRH/HXd3d3fdd3d33Xd3d3fR/x13d3d33Xd3d913d3d30f8dd3d3fR13d3fR13d3d9H/Ed
 d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
 EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
 AAAAUEECICABAAD/////+A4DgA==
-</rawitemdata>
-  </item>
-  <item name="$Daos">
-    <text>0</text>
-  </item>
-  <item name="$LaunchXPageRunOnServer">
-    <text>0</text>
-  </item>
-  <item name="$DefaultXPage">
-    <text>index.xsp</text>
-  </item>
-  <item name="$TITLE">
-    <text>First websocket APP</text>
-  </item>
-  <item name="$Flags">
-    <text>Jz7n!</text>
-  </item>
-  <item name="$FlagsNoRefresh">
-    <text>rv</text>
-  </item>
-</note>
+</rawitemdata></item>
+<item name='$Daos'><text>0</text></item>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$DefaultXPage'><text>index.xsp</text></item>
+<item name='$TITLE'><text>First websocket APP</text></item>
+<item name='$Flags'><text>Jz7n!</text></item>
+<item name='$FlagsNoRefresh'><text>rv</text></item></note>
+

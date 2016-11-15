@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-  <xp:this.resources>
-    <xp:styleSheet href="/shape.css"></xp:styleSheet>
-  </xp:this.resources>
-  <xp:div styleClass="text-center col-sm-8 col-sm-offset-2" style="border: 1px solid #DDD; padding: 5px;">
-    <xp:div id="shapeDiv" style="min-height:100px" styleClass="shape"></xp:div>
-    <xp:button styleClass="btn btn-primary" id="luckyBtn" value="Click me!">
-      <xp:eventHandler event="onclick" submit="false">
-        <xp:this.script><![CDATA[function getRandomNumber (min, max) {
+	<xp:this.resources>
+		<xp:styleSheet href="/shape.css"></xp:styleSheet>
+	</xp:this.resources>
+	<xp:this.beforePageLoad><![CDATA[#{javascript:var db = session.getDatabase("","wsapp.nsf"); 
+var shapeView:NotesView = db.getView("shapes");
+var shapeDoc:NotesDocument = shapeView.getFirstDocument();
+var shapeClass = {};
+//if there are no docs, let's create a default one.
+if (shapeDoc == null) {
+	var newShape:NotesDocument = db.createDocument();
+	newShape.appendItemValue("Form", "shape");
+	newShape.appendItemValue("bgColor", "");
+	newShape.appendItemValue("border", "1px solid black");
+	newShape.appendItemValue("borderRadius", "");
+	newShape.appendItemValue("width", "100px");
+	newShape.appendItemValue("height", "100px");
+	newShape.save();
+	shapeClass.bgColor = "white ";
+	shapeClass.border = "1px solid black";
+	shapeClass.borderRadius = "0 0";
+	shapeClass.height = "100px";
+	shapeClass.width = "100px";
+} else {
+	shapeClass.bgColor = shapeDoc.getItemValueString('bgColor');
+	shapeClass.border = shapeDoc.getItemValueString('border');
+	shapeClass.borderRadius = shapeDoc.getItemValueString('borderRadius');
+	shapeClass.height = shapeDoc.getItemValueString('height');
+	shapeClass.width = shapeDoc.getItemValueString('width');
+}
+
+viewScope.put("vs_shapeClass", shapeClass);
+}]]></xp:this.beforePageLoad>
+	<xp:div styleClass="text-center col-sm-8 col-sm-offset-2">
+
+		<xp:div id="shapeDiv" styleClass="shape">
+			<xp:this.style><![CDATA[#{javascript:var shapeStyle = viewScope.get('vs_shapeClass');
+var style ="";
+style += "border: " + shapeStyle.border 
+style += "; background-color: " + shapeStyle.bgColor; 
+style += "; border-radius: " + shapeStyle.borderRadius; 
+style += "; height: " + shapeStyle.height; 
+style += "; width: " + shapeStyle.width;
+
+return style; }]]></xp:this.style>
+		</xp:div>
+		<xp:button styleClass="btn btn-primary" id="luckyBtn"
+			value="Click me!">
+			<xp:eventHandler event="onclick" submit="false">
+				<xp:this.script><![CDATA[function getRandomNumber (min, max) {
 	return Math.floor(Math.random() * (max-min)) + min;
 }
 
@@ -27,10 +68,10 @@ shape.divWidth = divWidth;
 
 var shapeMessage = createShapeMsg(shape);
 ws.send(shapeMessage);]]></xp:this.script>
-      </xp:eventHandler>
-    </xp:button>
-  </xp:div>
-  <xp:scriptBlock id="shapeDivScript">
-    <xp:this.value><![CDATA[var $shapeDiv = x$("#{id:shapeDiv}");]]></xp:this.value>
-  </xp:scriptBlock>
+			</xp:eventHandler>
+		</xp:button>
+	</xp:div>
+	<xp:scriptBlock id="shapeDivScript">
+		<xp:this.value><![CDATA[var $shapeDiv = x$("#{id:shapeDiv}");]]></xp:this.value>
+	</xp:scriptBlock>
 </xp:view>
