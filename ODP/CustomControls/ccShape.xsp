@@ -3,7 +3,10 @@
 	<xp:this.resources>
 		<xp:styleSheet href="/shape.css"></xp:styleSheet>
 	</xp:this.resources>
-	<xp:this.beforePageLoad><![CDATA[#{javascript:var db = session.getDatabase("","wsapp.nsf"); 
+	<xp:this.beforePageLoad><![CDATA[#{javascript:websocketBean.addEventObserver("/wsapp.nsf/observer.ssjs");
+websocketBean.addUriListener("/wsappListener","/wsapp.nsf/listener.ssjs");
+
+var db = session.getDatabase("","wsapp.nsf"); 
 var shapeView:NotesView = db.getView("shapes");
 var shapeDoc:NotesDocument = shapeView.getFirstDocument();
 var shapeClass = {};

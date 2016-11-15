@@ -1,2 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<stylesheetresource xmlns="http://www.lotus.com/dxl" charset="UTF-8" name="shape.css" publicaccess="false"/>
+<?xml version="1.0" encoding="UTF-8"?><stylesheetresource charset="UTF-8" designerversion="8.5.3" maintenanceversion="1.7" name="shape.css" publicaccess="false" replicaid="8725805D004F3827" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1a2" sequence="4" unid="60C9C44EB33EC3DF8725805E005532FF">
+<created><datetime dst="true">20161101T093036,15-06</datetime></created>
+<modified><datetime>20161115T160717,93-07</datetime></modified>
+<revised><datetime>20161115T160717,92-07</datetime></revised>
+<lastaccessed><datetime>20161115T160717,92-07</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20161101T093036,15-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby></stylesheetresource>

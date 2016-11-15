@@ -11,7 +11,8 @@ function createMsgHeader() {
 	// create the constant part of websocket messages
 	var msg = {};
 	msg.from = currentUser; //a global var of @UserName()
-	msg.to = "/wsapp.nsf*";
+//	msg.to = "/wsapp.nsf*";
+	msg.targets = ["/wsapp.nsf*", "/wsappListener"];
 	msg.data = {};
 	msg.data.application = "wsApp";
 	return msg

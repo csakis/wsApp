@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <view xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.7'
- replicaid='87258044004D9726' showinmenu='true' publicaccess='false' default='true'
+ replicaid='8725805D004F3827' showinmenu='true' publicaccess='false' default='true'
  noviewformat='true'>
-<noteinfo noteid='11a' unid='8405C6B62C350BDE87258044004D9728' sequence='2'>
-<created><datetime dst='true'>20161006T080729,68-06</datetime></created>
-<modified><datetime dst='true'>20161006T094147,81-06</datetime></modified>
-<revised><datetime dst='true'>20161006T094147,80-06</datetime></revised>
-<lastaccessed><datetime dst='true'>20161006T094147,80-06</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20161006T080729,71-06</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Csaba Kiss/O=csaba</name></updatedby>
-<wassignedby><name>CN=Csaba Kiss/O=csaba</name></wassignedby><code event='selection'><formula
+<noteinfo noteid='11a' unid='DB8F3FD2C05F5FF28725805D004F3850' sequence='2'>
+<created><datetime dst='true'>20161031T082517,60-06</datetime></created>
+<modified><datetime>20161115T160718,15-07</datetime></modified>
+<revised><datetime>20161115T160718,14-07</datetime></revised>
+<lastaccessed><datetime>20161115T160718,14-07</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20161031T082517,67-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby><code event='selection'><formula
 >SELECT @All</formula></code>
 <item name='$FormulaClass'><text>1</text></item></view>
 

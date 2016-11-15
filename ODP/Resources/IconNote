@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
- maintenanceversion='1.6' replicaid='8725804C000EFFF1'>
-<noteinfo noteid='11a' unid='8602375730055E0D8725804C000EFFF5' sequence='16'>
-<created><datetime dst='true'>20161013T204350,29-06</datetime></created>
-<modified><datetime>20161114T164224,00-07</datetime></modified>
-<revised><datetime>20161114T164223,99-07</datetime></revised>
-<lastaccessed><datetime>20161114T164224,00-07</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20161013T204350,32-06</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Csaba Kiss/O=desktop</name></updatedby>
-<wassignedby><name>CN=Csaba Kiss/O=desktop</name></wassignedby>
+ maintenanceversion='1.7' replicaid='8725805D004F3827'>
+<noteinfo noteid='11e' unid='C5985F0DCFB0D3698725805D004F3864' sequence='30'>
+<created><datetime dst='true'>20161031T082517,80-06</datetime></created>
+<modified><datetime>20161115T155351,47-07</datetime></modified>
+<revised><datetime>20161115T155351,46-07</datetime></revised>
+<lastaccessed><datetime>20161115T155351,46-07</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20161031T082517,87-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
 <item name='IconBitmap' summary='true'>
 <rawitemdata type='6'>
 AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA
